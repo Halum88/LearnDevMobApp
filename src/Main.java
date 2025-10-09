@@ -1,41 +1,111 @@
 import java.util.Scanner;
 
-
-
 public class Main {
     public static void main(String[] args) {
-        // System.out.println("Hello World!");
-        // byte a = 100;
-        // short b, c, d;
-        // b = 400;
-        // c = 500;
-        // d = 600;
 
-        // System.out.println(a);
-        // System.out.println();
-        // System.out.println(c);
-        
-        // char symbol = '$';
-        // System.out.println(symbol);
-        // calculateSecondsFromUser()
 
-        System.out.println("Enter amount of seconds: ");
+        int summ = 0;
+        for (int a = 0; a <= 100; a++) {
+            summ += a;
+        }
 
-        Scanner sc = new Scanner(System.in);
-        int secondsFromUser = sc.nextInt();
-        int days = (secondsFromUser / 60 / 60 / 24);
-        int hours = (secondsFromUser / 60 / 60) % 24;
-        int minutes = (secondsFromUser / 60) % 60;
-        int seconds = secondsFromUser % minutes;
+        System.out.println("Summa" + summ);
+
+
+
+
+
+
+
+        // int i = 1000;
+        // while (i >= 0) {
+        //     if (i % 2 == 0) {
+        //         System.out.print(i + " ");
+        //     }
+        //     i--;
+        // }
+        // System.out.println(("цикл завершен"));
         
-        System.out.println(days);
-        System.out.println(hours);
-        System.out.println(minutes);
-        System.out.println(seconds);
-        
-        
+
+
+
+
+
+
+        // switchMethod();
+        // ifMethod();
+        // conditioning();
+
 
     }
-    
+
+    private static void conditioning(){
+        boolean isHost = false;
+        if(isHost) {
+            System.out.println("cooling");
+        } else {
+            System.out.println("No cooling");
+        }
+    }
+
+    private static void ifMethod(){
+        System.out.println("Enter number from 1 to 5");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        if(number == 1) {
+            System.out.println("1");
+        }
+        if(number == 2) {
+            System.out.println("2");
+        }
+        if(number == 3) {
+            System.out.println("3");
+        }
+        if(number == 4) {
+            System.out.println("4");
+        }
+        if(number == 5) {
+            System.out.println("5");
+        }
+        else{
+            System.out.println("Error number: Please 1 to 5!");
+        }
+        scanner.close();
+    }
+
+    private static void switchMethod() {
+        System.out.println("Enter number from 1 to 5: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+
+        switch (number) {
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            case 3:
+                System.out.println("3");
+                break;
+            case 4:
+                System.out.println("4");
+                break;
+            case 5:
+                System.out.println("5");
+                break;
+        
+            default:
+            System.out.println("Error number: Please 1 to 5!");
+                break;
+        
+        
+        }
+
+        scanner.close();
+    }
+
 }
+    
+
 
