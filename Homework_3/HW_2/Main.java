@@ -19,11 +19,21 @@ public class Main {
 
         };
 
+        int count = 0;
         for (Staff staff : staffs) {
             if (staff.age > 40) {
+                count++;
                 staff.printInfo();
             }
         }
+        System.out.println("Сотрудников в компании старше 40 лет: " + count);
+        
+        System.out.println("Общее количество сотрудников в компании: " + Staff.amountOfStaff);
+        
+        // вывод всех сотрудников
+        // for (Staff staff : staffs) {
+        //     staff.printInfo();
+        // }
 
 
     }

@@ -1,6 +1,7 @@
 package Homework_3.HW_2;
 
 public class Staff {
+    static int amountOfStaff;
 
     private String fullName;   // ФИО
     private String position;   // должность
@@ -18,6 +19,7 @@ public class Staff {
         this.phone = phone;
         this.salary = salary;
         this.age = age;
+        amountOfStaff++;
 
     }
 
